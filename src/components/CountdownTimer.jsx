@@ -12,7 +12,6 @@ export function CountdownTimer({ targetDate }) {
   const [isExpired, setIsExpired] = useState(false)
 
   useEffect(() => {
-    const targetDate = new Date('2025-02-15T00:00:00')
     
     const interval = setInterval(() => {
       const now = new Date()
