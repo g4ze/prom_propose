@@ -68,14 +68,14 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-4 items-center mb-6">
             <div className="bg-purple-100 p-4 rounded-lg">
               <h3 className="font-bold text-purple-800">Last Time</h3>
-              <p>Regular corsage</p>
+              <p>Regular planning required</p>
             </div>
             <div className="flex justify-center items-center">
               <span className="text-2xl font-bold text-indigo-500">VS</span>
             </div>
             <div className="bg-indigo-100 p-4 rounded-lg">
               <h3 className="font-bold text-indigo-800">This Time</h3>
-              <p>Corsage that never wilts (just like our connection)</p>
+              <p>No planning, highly optimised(it's a feature)</p>
             </div>
           </div>
           
@@ -89,7 +89,7 @@ export default function Home() {
             </div>
             <div className="bg-indigo-100 p-4 rounded-lg">
               <h3 className="font-bold text-indigo-800">This Time</h3>
-              <p>Dance moves that will go viral (for good reasons)</p>
+              <p>Dance moves that will go viral (for good reasons, we'll make a reel ;) )</p>
             </div>
           </div>
           
@@ -109,11 +109,11 @@ export default function Home() {
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 mt-12">
-          <Link href="/memories" className="transform transition-all duration-300 hover:scale-105">
+          <Link href="/presentation" className="transform transition-all duration-300 hover:scale-105">
             <div className="bg-white rounded-xl shadow-md overflow-hidden h-full">
               <div className="p-6">
-                <h2 className="text-xl font-semibold text-purple-700 mb-2">Our Best Moments &rarr;</h2>
-                <p className="text-gray-600">A highlight reel of our greatest hits</p>
+                <h2 className="text-xl font-semibold text-purple-700 mb-2">Why me? &rarr;</h2>
+                <p className="text-gray-600">A small presentaion</p>
               </div>
             </div>
           </Link>
@@ -139,7 +139,7 @@ export default function Home() {
       </main>
 
       )}
-      )
+      
     </div>
   )
 }

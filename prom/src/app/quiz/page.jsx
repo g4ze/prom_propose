@@ -84,11 +84,7 @@ export default function Quiz() {
         )}
       </main>
       
-      <footer className="mt-16 text-center">    
-        <Link href="/" className="text-indigo-500 hover:text-indigo-700 transition-colors">
-          &larr; Back to Home
-        </Link>
-      </footer>
+    
     </div>
   )
 }

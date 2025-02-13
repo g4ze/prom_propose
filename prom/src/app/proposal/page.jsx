@@ -39,7 +39,7 @@ export default function Proposal() {
           <div className="bg-white rounded-2xl shadow-xl p-8 flex flex-col items-center">
             <div className="relative w-full h-64 sm:h-80 md:h-96 mb-6 rounded-xl overflow-hidden">
               <Image 
-                src="/images/us-at-prom.jpg"
+                src="/images/cat_coala.png"
                 alt="Us at our first prom"
                 fill
                 className="object-cover"
@@ -74,11 +74,11 @@ export default function Proposal() {
                 </li>
                 <li className="flex items-center">
                   <span className="text-pink-500 mr-2">✓</span>
-                  <span>To remember which wrist the corsage goes on</span>
+                  <span>To remember dates better</span>
                 </li>
                 <li className="flex items-center">
                   <span className="text-pink-500 mr-2">✓</span>
-                  <span>To request at least one embarrassingly cheesy slow song</span>
+                  <span>To crack atleast one chessy flirt</span>
                 </li>
                 <li className="flex items-center">
                   <span className="text-pink-500 mr-2">✓</span>
@@ -90,12 +90,7 @@ export default function Proposal() {
         )}
       </main>
       
-      <footer className="mt-16 text-center text-gray-500 relative z-10">
-        <p>The best sequels always have better special effects and more heart</p>
-        <Link href="/" className="block mt-4 text-indigo-500 hover:text-indigo-700 transition-colors">
-          &larr; Back to Home
-        </Link>
-      </footer>
+     
     </div>
   )
 }
