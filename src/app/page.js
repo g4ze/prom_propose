@@ -11,11 +11,11 @@ import { Heart, Moon } from 'lucide-react'
 export default function Home() {
   const [showMainContent, setShowMainContent] = useState(false);
   const [isValentinesTheme, setIsValentinesTheme] = useState(false);
-  const [targetDate, setTargetDate] = useState("2024-02-14T00:00:00");
+  const [targetDate, setTargetDate] = useState("2025-02-15T00:00:00");
 
   const toggleTheme = () => {
     setIsValentinesTheme(!isValentinesTheme);
-    setTargetDate(isValentinesTheme ? "2024-02-14T00:00:00" : "2024-02-15T00:00:00");
+    setTargetDate(!isValentinesTheme ? "2025-02-14T00:00:00" : "2025-02-15T00:00:00");
   };
 
   // Theme-based style classes

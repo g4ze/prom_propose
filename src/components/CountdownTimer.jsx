@@ -1,4 +1,3 @@
-// src/components/CountdownTimer.js
 "use client"
 import { useState, useEffect } from 'react'
 
@@ -12,11 +11,21 @@ export function CountdownTimer({ targetDate }) {
   const [isExpired, setIsExpired] = useState(false)
 
   useEffect(() => {
+    // Parse the targetDate if it's a string
+    const parsedDate = targetDate instanceof Date ? targetDate : new Date(targetDate)
+    
+    // Check if the parsed date is valid
+    if (isNaN(parsedDate.getTime())) {
+      console.error("Invalid date provided to CountdownTimer:", targetDate)
+      setIsExpired(true)
+      return
+    }
+    
+    const targetTime = parsedDate.getTime()
     
     const interval = setInterval(() => {
-      const now = new Date()
-      const difference = targetDate - now
-      console.log(difference)
+      const now = new Date().getTime()
+      const difference = targetTime - now
       
       if (difference > 0) {
         const days = Math.floor(difference / (1000 * 60 * 60 * 24))
@@ -28,11 +37,12 @@ export function CountdownTimer({ targetDate }) {
         setIsExpired(false)
       } else {
         setIsExpired(true)
+        clearInterval(interval)
       }
     }, 1000)
     
     return () => clearInterval(interval)
-  }, [])
+  }, [targetDate])
 
   if (isExpired) {
     return (
