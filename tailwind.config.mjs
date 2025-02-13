@@ -1,7 +1,6 @@
-// First, let's add the animations to our Tailwind config
-// tailwind.config.js
+// tailwind.config.mjs
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -37,5 +36,3 @@ module.exports = {
   },
   plugins: [],
 }
-
-// Now, let's create a new component for our animated elements
